@@ -11,11 +11,11 @@ import RPi.GPIO as GPIO
 
 # connect to server
 client_socket = socket.socket()
-client_socket.connect(('192.168.0.5', 8001))
+client_socket.connect(('192.168.0.5', 8000))
 
 # distance sensor socket
 distance_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-distance_server = ('192.168.0.5', 8011)
+distance_server = ('192.168.0.5', 8010)
 
 
 # make file like object out of connection

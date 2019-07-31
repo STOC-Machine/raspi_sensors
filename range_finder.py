@@ -19,7 +19,11 @@ class range_finder(object):
         GPIO.output(self.TRIG, False)
 
     def loop(self):
+	self.range = 0
+	#for _ in range(4):
         self.range = self.rangeFinder()
+		#time.sleep(0.03)
+	#self.range = self.range / 5
         return self.range
         #print self.range, " cm"
         #print self.multiObjectDetection(self.range)
